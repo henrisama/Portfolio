@@ -69,3 +69,20 @@ export const BioAbstract = styled.p`
     padding: 20px;
   }
 `;
+
+interface WordCloudProps {
+  image_path: string;
+}
+export const WordCloud = styled.div<WordCloudProps>`
+  background-image: url(${(props) => props.image_path});
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+
+  @media (max-width: 800px) {
+    height: 300px;
+    width: 300px;
+  }
+`;

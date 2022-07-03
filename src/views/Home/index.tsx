@@ -9,6 +9,7 @@ import {
   BioDiv,
   BioImage,
   Title,
+  WordCloud,
 } from "./style";
 
 const Introduce = () => {
@@ -40,7 +41,7 @@ const Introduce = () => {
 };
 
 const Bio = () => {
-  const { primary, color } = useContext(ThemeContext);
+  const { primary } = useContext(ThemeContext);
 
   useEffect(() => {
     const bioImage = document.getElementById("bioImage") as HTMLDivElement;
@@ -72,7 +73,7 @@ const Bio = () => {
 
   return (
     <>
-      <Container backgroundColor={primary} padding="40px 0px 40px 0px">
+      <Container backgroundColor={primary} padding="40px 0px">
         <Center>
           <BioDiv>
             <BioCard>
@@ -100,11 +101,51 @@ const Bio = () => {
   );
 };
 
+const Skills = () => {
+  const { primary, title, secundary } = useContext(ThemeContext);
+
+  const options = {
+    fontFamily: "impact",
+    fontSizes: [10, 150] as [number, number],
+    padding: 1,
+    deterministic: true,
+  };
+
+  return (
+    <>
+      <Container backgroundColor={primary} padding="40px 0px">
+        <Center>
+          <Container
+            padding="50px 0px"
+            width="80%"
+            backgroundColor={secundary}
+            style={{ borderRadius: "20px" }}
+          >
+            <Container textAlign="center" padding="20px 0px">
+              <h1>Skills</h1>
+            </Container>
+            <Center>
+              <WordCloud
+                image_path={
+                  title === "light"
+                    ? "src/public/img/wordcloud.png"
+                    : "src/public/img/wordcloud_dark.png"
+                }
+              />
+            </Center>
+          </Container>
+        </Center>
+      </Container>
+    </>
+  );
+};
+
 const Home = () => {
   return (
     <>
       <Introduce />
       <Bio />
+      <Skills />
     </>
   );
 };
