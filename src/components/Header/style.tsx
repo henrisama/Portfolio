@@ -13,7 +13,7 @@ export const Nav = styled.div`
 
   a {
     text-decoration: none;
-    color: #f3f3f3;
+    color: ${(props) => props.theme.color};
     padding: 0px 10px 0px 10px;
     font-size: 15pt;
   }

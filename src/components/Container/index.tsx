@@ -13,8 +13,8 @@ interface ContainerProps {
 }
 
 const Container = styled.div<ContainerProps>`
-  height: ${(props) => (props.height ? props.height : "100%")};
-  width: ${(props) => (props.width ? props.width : "100%")};
+  height: ${(props) => (props.height ? props.height : "")};
+  width: ${(props) => (props.width ? props.width : "")};
   margin: ${(props) => (props.margin ? props.margin : "0px")};
   padding: ${(props) => (props.padding ? props.padding : "0px")};
   display: ${(props) => (props.display ? props.display : "block")};

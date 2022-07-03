@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 import Router from "./config/Router";
@@ -12,8 +12,17 @@ const Main = () => {
   const [theme, setTheme] = useState(lightTheme);
 
   function toggleTheme() {
+    localStorage.setItem("theme", theme.title === "light" ? "dark" : "light");
     setTheme(theme === lightTheme ? darkTheme : lightTheme);
   }
+
+  useEffect(() => {
+    const themeTitle = localStorage.getItem("theme");
+
+    if (themeTitle) {
+      themeTitle === theme.title ? null : setTheme(darkTheme);
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>
