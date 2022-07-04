@@ -25,6 +25,7 @@ const Header = ({ toggleTheme, checked }: Props) => {
           height={15}
           width={50}
           handleDiameter={30}
+          onColor="#29335C"
         />
       </div>
     </Nav>

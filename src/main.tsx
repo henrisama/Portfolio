@@ -7,6 +7,7 @@ import lightTheme from "./styles/theme/light";
 import darkTheme from "./styles/theme/dark";
 import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
 
 const Main = () => {
   const [theme, setTheme] = useState(lightTheme);
@@ -29,6 +30,7 @@ const Main = () => {
       <BrowserRouter>
         <Header toggleTheme={toggleTheme} checked={theme === darkTheme} />
         <Router />
+        <Footer />
       </BrowserRouter>
       <Global />
     </ThemeProvider>
