@@ -3,5 +3,5 @@ export default {
   primary: "#29335C",
   secundary: "#DB2B39",
   color: "white",
-  background: "#dfdfdf",
+  background: "#29335C",
 };

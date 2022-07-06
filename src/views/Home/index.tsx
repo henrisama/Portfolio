@@ -41,7 +41,7 @@ const Introduce = () => {
 };
 
 const Bio = () => {
-  const { primary } = useContext(ThemeContext);
+  const { background } = useContext(ThemeContext);
 
   useEffect(() => {
     const bioImage = document.getElementById("bioImage") as HTMLDivElement;
@@ -73,7 +73,7 @@ const Bio = () => {
 
   return (
     <>
-      <Container backgroundColor={primary} padding="40px 0px">
+      <Container padding="40px 0px" backgroundColor={background}>
         <Center>
           <BioDiv>
             <BioCard>
@@ -102,24 +102,17 @@ const Bio = () => {
 };
 
 const Skills = () => {
-  const { primary, title, secundary } = useContext(ThemeContext);
-
-  const options = {
-    fontFamily: "impact",
-    fontSizes: [10, 150] as [number, number],
-    padding: 1,
-    deterministic: true,
-  };
+  const { title, secundary, background } = useContext(ThemeContext);
 
   return (
     <>
-      <Container backgroundColor={primary} padding="40px 0px">
+      <Container backgroundColor={background} padding="40px 0px">
         <Center>
           <Container
             padding="50px 0px"
             width="80%"
             backgroundColor={secundary}
-            style={{ borderRadius: "20px" }}
+            style={{ borderRadius: "10px" }}
           >
             <Container textAlign="center" padding="20px 0px">
               <h1>Skills</h1>

@@ -22,7 +22,7 @@ export const BioDiv = styled.div`
   height: 400px;
   display: flex;
   background-color: ${(props) => props.theme.secundary};
-  border-radius: 20px;
+  border-radius: 10px;
 
   @media (max-width: 800px) {
     padding: 40px 0px 40px 0px;
