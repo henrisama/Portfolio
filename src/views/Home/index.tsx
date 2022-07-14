@@ -20,8 +20,8 @@ const Introduce = () => {
       <Background
         image_path={
           title === "light"
-            ? "src/public/img/background.png"
-            : "src/public/img/background_dark.png"
+            ? "/img/background.png"
+            : "/img/background_dark.png"
         }
       >
         <Container
@@ -121,8 +121,8 @@ const Skills = () => {
               <WordCloud
                 image_path={
                   title === "light"
-                    ? "src/public/img/wordcloud.png"
-                    : "src/public/img/wordcloud_dark.png"
+                    ? "/img/wordcloud.png"
+                    : "/img/wordcloud_dark.png"
                 }
               />
             </Center>
