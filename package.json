@@ -2,10 +2,13 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://henrisama.github.io/Porfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -26,6 +29,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",

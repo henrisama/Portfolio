@@ -6,7 +6,7 @@ export default [
         title: "MNIST",
         overview: "Convolutional neural network for MNIST",
         technologies: ["Python", "Tensorflow", "Matplotlib", "Sklearn", "CNN"],
-        image_path: "src/public/img/mnist.jpg",
+        image_path: "src/public/img/MNIST.jpg",
         link: "https://github.com/henrisama/MNIST",
       },
       {
