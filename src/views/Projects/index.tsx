@@ -1,8 +1,12 @@
 import React from "react";
-import Card from "@components/Card";
+/* import Card from "@components/Card";
 import Container from "@components/Container";
 import Grid from "@components/Grid";
-import projects from "@assets/js/projects";
+import projects from "@assets/js/projects"; */
+import Card from "../../components/Card";
+import Container from "../../components/Container";
+import Grid from "../../components/Grid";
+import projects from "../../assets/js/projects";
 import { Title } from "./style";
 
 const Projects = () => {

@@ -1,7 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "styled-components";
-import Center from "@components/Center";
-import Container from "@components/Container";
+/* import Center from "@components/Center";
+import Container from "@components/Container"; */
+import Center from "../../components/Center";
+import Container from "../../components/Container";
 import {
   Background,
   BioAbstract,
