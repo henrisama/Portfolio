@@ -26,7 +26,7 @@ const Header = ({ toggleTheme, checked }: Props) => {
     <Nav id="nav">
       <NavLinks>
         <div>
-          <Link to="/Porfolio/">Home</Link>
+          <Link to="/Portfolio/">Home</Link>
         </div>
         <div>
           <Link to="/Portfolio/projects">Projects</Link>
