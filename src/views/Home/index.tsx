@@ -49,8 +49,7 @@ const Bio = () => {
       "bioAbstract",
     ) as HTMLDivElement;
 
-    const bioAbstractPosition =
-      bioAbstract.offsetTop + bioAbstract.offsetHeight;
+    const bioAbstractPosition = bioAbstract.offsetTop;
 
     window.onscroll = () => {
       if (

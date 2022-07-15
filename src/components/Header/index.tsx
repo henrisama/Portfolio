@@ -36,7 +36,7 @@ const Header = ({ toggleTheme, checked }: Props) => {
             href="https://docs.google.com/document/d/14Py4FTF9mDoe_bqbLrIyO1_MvH-oE4pHsJiNOh2YOWs/edit?usp=sharing"
             target="_blank"
           >
-            Resume
+            CV
           </a>
         </div>
       </NavLinks>

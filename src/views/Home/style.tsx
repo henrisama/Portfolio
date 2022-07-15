@@ -50,7 +50,7 @@ export const BioImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 1s linear;
+  transition: opacity 2s linear;
 
   @media (max-width: 800px) {
     height: 175px;
@@ -63,7 +63,7 @@ export const BioAbstract = styled.p`
   padding: 50px;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s linear;
+  transition: opacity 2s linear;
 
   @media (max-width: 800px) {
     padding: 20px;
