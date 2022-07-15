@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "styled-components";
-import Center from "../../components/Center";
-import Container from "../../components/Container";
+import Center from "@components/Center";
+import Container from "@components/Container";
 import {
   Background,
   BioAbstract,
@@ -19,9 +19,7 @@ const Introduce = () => {
     <>
       <Background
         image_path={
-          title === "light"
-            ? "/img/background.png"
-            : "/img/background_dark.png"
+          title === "light" ? "img/background.png" : "img/background_dark.png"
         }
       >
         <Container
@@ -121,8 +119,8 @@ const Skills = () => {
               <WordCloud
                 image_path={
                   title === "light"
-                    ? "/img/wordcloud.png"
-                    : "/img/wordcloud_dark.png"
+                    ? "img/wordcloud.png"
+                    : "img/wordcloud_dark.png"
                 }
               />
             </Center>

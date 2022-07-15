@@ -45,7 +45,7 @@ export const BioImage = styled.div`
   height: 250px;
   width: 250px;
   border-radius: 100%;
-  background-image: url("/img/profile.jpeg");
+  background-image: url("img/profile.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
