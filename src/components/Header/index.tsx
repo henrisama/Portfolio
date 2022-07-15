@@ -26,15 +26,15 @@ const Header = ({ toggleTheme, checked }: Props) => {
     <Nav id="nav">
       <NavLinks>
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/Portfolio/">Home</Link>
         </div>
         <div>
-          <Link to="/projects">Projects</Link>
+          <Link to="/Portfolio/projects">Projects</Link>
         </div>
         <div>
-          <a 
-            href="https://docs.google.com/document/d/14Py4FTF9mDoe_bqbLrIyO1_MvH-oE4pHsJiNOh2YOWs/edit?usp=sharing" 
-            target="_blank" 
+          <a
+            href="https://docs.google.com/document/d/14Py4FTF9mDoe_bqbLrIyO1_MvH-oE4pHsJiNOh2YOWs/edit?usp=sharing"
+            target="_blank"
           >
             Resume
           </a>

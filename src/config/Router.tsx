@@ -5,8 +5,8 @@ import Projects from "../views/Projects";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/Portfolio" element={<Home />} />
+      <Route path="/Portfolio/projects" element={<Projects />} />
     </Routes>
   );
 };
